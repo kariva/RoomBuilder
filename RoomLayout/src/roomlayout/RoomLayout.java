@@ -23,9 +23,13 @@ import javafx.stage.Stage;
  * @author EyZi Nakagami
  */
 public class RoomLayout extends Application {
+    //MVC Variables
+    private MainView view;
     
     @Override
     public void start(Stage primaryStage) {
+        
+        /**
         BorderPane root = new BorderPane();
         
         //Menu Bar
@@ -85,12 +89,9 @@ public class RoomLayout extends Application {
         statusbar.setPadding(new Insets(2,2,2,5));
         statusbar.setStyle("-fx-background-color: cornsilk;");
         statusbar.getChildren().addAll(status);
-                
-        root.setTop(menubar);
-        root.setLeft(toolbar);
-        root.setCenter(workspace);
-        root.setBottom(statusbar);
-        Scene scene = new Scene(root, 1280, 720);
+        **/
+        view = new MainView();
+        Scene scene = new Scene(view.getScene(), 1280, 720);
         primaryStage.setTitle("Room Layout Designer");
         primaryStage.setScene(scene);
         primaryStage.show();
