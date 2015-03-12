@@ -5,6 +5,7 @@
  */
 package roomlayout;
 
+import java.io.File;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -92,6 +93,15 @@ public class RoomLayout extends Application {
         **/
         view = new MainView();
         Scene scene = new Scene(view.getScene(), 1280, 720);
+        String filename = "flatterfx.css";
+	String workingDirectory = System.getProperty("user.dir");
+        String absoluteFilePath = "";
+        absoluteFilePath = workingDirectory + File.separator + filename;
+        File f = new File(absoluteFilePath);
+        scene.getStylesheets().clear();
+        System.out.println(f.toString());
+        scene.getStylesheets().add("file:///" + f.getAbsolutePath().replace("\\", "/"));
+        scene.getStylesheets().add("http://fonts.googleapis.com/css?family=Roboto+Condensed:700");
         primaryStage.setTitle("Room Layout Designer");
         primaryStage.setScene(scene);
         primaryStage.show();

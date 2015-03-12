@@ -13,7 +13,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
-
 /**
  *
  * @author Kari Vass
@@ -36,22 +35,18 @@ public class MainView {
         //Initialize layout variables
         //Top menu
         topMenu = new HBox();
-        topMenu.setStyle("-fx-background-color: #f1f1f1;");
+        topMenu.setStyle("-fx-background-color: #383838;");
         topMenu.setPadding(new Insets(20, 20, 20, 20));
         topMenu.setSpacing(25);
         Button top1 = new Button("Save");
-        top1.setMinSize(75, 50);
         Button top2 = new Button("New Room");
-        top2.setMinSize(75, 50);
         Button top3 = new Button("Clear All");
-        top3.setMinSize(75, 50);
         Button top4 = new Button("...");
-        top4.setMinSize(75, 50);
         topMenu.getChildren().addAll(top1, top2, top3, top4);
         
         //Toolbar
         toolBar = new GridPane();
-        toolBar.setStyle("-fx-background-color: #f1f1f1;");
+        toolBar.setStyle("-fx-background-color: #383838;");
         toolBar.setPadding(new Insets(0, 20, 20, 20));
         toolBar.setHgap(20);
         toolBar.setVgap(20);
