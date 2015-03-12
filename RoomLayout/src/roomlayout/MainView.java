@@ -43,7 +43,7 @@ public class MainView {
         top1.setMinSize(75, 50);
         Button top2 = new Button("New Room");
         top2.setMinSize(75, 50);
-        Button top3 = new Button("...");
+        Button top3 = new Button("Clear All");
         top3.setMinSize(75, 50);
         Button top4 = new Button("...");
         top4.setMinSize(75, 50);
