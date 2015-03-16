@@ -43,7 +43,8 @@
  ******************************************************************************/
 
 .label {
-    -fx-text-fill: -fx-text-base-color;
+    -fx-font-size: 30.0px;
+    -fx-text-fill: -flatter-red;
 }
 
 .label:disabled {
